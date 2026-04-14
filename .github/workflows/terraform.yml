@@ -10,27 +10,27 @@ jobs:
     runs-on: AmazonLinux
 
 
-  steps:
-    - name: 1.checkout code
-      uses: actions/checkout@v3
+    steps:
+      - name: 1.checkout code
+        uses: actions/checkout@v3
 
-    - name: 2.install terraform
-      uses: hashicorp/ setup-terraform@v2
+      - name: 2.install terraform
+        uses: hashicorp/ setup-terraform@v2
 
-    - name: 3.configure aws
-      uses: aws-actions/configure-aws-credentials@v2
-      with:
-        aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
-        aws-secrete-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+      - name: 3.configure aws
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws-secrete-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
-    - name: 4.  Terraform init
-      run: terraform init
+      - name: 4.  Terraform init
+        run: terraform init
  
-    - name: 5. Terraform validate
-      run: terraform validate
+      - name: 5. Terraform validate
+        run: terraform validate
 
-    - name: 6. Terraform plan
-      run: terraform plan
+      - name: 6. Terraform plan
+        run: terraform plan
    
-    - name: 7.  Terraform apply
-      run:  terraform apply -auto-approve  
+      - name: 7.  Terraform apply
+        run:  terraform apply -auto-approve  
