@@ -1,12 +1,8 @@
-
-
-name: my first terraform pipeline
-
+name:  my first terraform pipeline
 on:
   push:
     branches:
       - main
-
 
 jobs:
   terraform:
@@ -26,14 +22,14 @@ jobs:
         aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
         aws-secrete-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
-    - name: 4.  Terraform init
-      run: terraform init
+   - name: 4.  Terraform init
+     run: terraform init
 
-    - name: 5. Terraform validate
-      run: terraform validate
+   - name: 5. Terraform validate
+    run: terraform validate
 
-    - name: 6. Terraform plan
-      run: terraform plan
+   - name: 6. Terraform plan
+     run: terraform plan
    
-    - name: 7.  Terraform apply
-      run:  terraform apply -auto-approve  
+   - name: 7.  Terraform apply
+     run:  terraform apply -auto-approve  
