@@ -1,6 +1,6 @@
 
 
-name = my first terraform pipeline
+name:  my first terraform pipeline
 
 on:
   push:
