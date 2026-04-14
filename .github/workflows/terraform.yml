@@ -4,7 +4,7 @@ name:  my first terraform pipeline
 
 on:
   push:
-    branch:
+    branches:
       - main
 
 jobs:
