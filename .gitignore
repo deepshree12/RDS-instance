@@ -1,0 +1,8 @@
+#terraform folder
+.terraform/
+.terraform.lock.hcl
+.provider.tf.swp
+
+#terraform state file
+*.tfstate
+*.tfstate.*
