@@ -21,9 +21,9 @@ jobs:
           aws-secret-access-key: {{ secrets.AWS_SECRET_ACCESS_KEY   }}
           aws-region: ap-southeast-2
 
-     - name: Terraform init
-       run: terraform init
+      - name: Terraform init
+        run: terraform init
 
-     - name: terrsform destroy
-       run: terraform destroy -auto-approve
+      - name: terrsform destroy
+        run: terraform destroy -auto-approve
 
