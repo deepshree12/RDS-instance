@@ -13,7 +13,7 @@ parameter {
 
  name = "max_connections"
  value = "100"
- apply_method = "immediate"
+ apply_method = "pending-reboot"
 
 }
 tags = {
