@@ -6,6 +6,5 @@ storage_type = "gp2"
 allocated_storage = 10
 db_name = "postgres"
 username = "postgres"
-password = "strongpass123!"
 skip_final_snapshot = true
 

@@ -54,12 +54,6 @@ description = "username for the database"
 
 }
 
-variable "password" {
-
-type = string
-description = "password for the user"
-
-}
 
 variable "skip_final_snapshot" {
 
