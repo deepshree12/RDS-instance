@@ -7,4 +7,4 @@ allocated_storage = 10
 db_name = "postgres"
 username = "postgres"
 skip_final_snapshot = true
-backup_retention_period = 0
+backup_retention_period = 1
