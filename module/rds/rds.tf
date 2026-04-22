@@ -10,8 +10,7 @@ db_subnet_group_name = var.db_subnet_group_name
 db_name = var.db_name
 username = var.username
 password = var.password
+parameter_group_name = var.db_parameter_group_name
 skip_final_snapshot = var.skip_final_snapshot
-
-
 
 }

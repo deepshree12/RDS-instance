@@ -74,3 +74,10 @@ type = string
 description = "db_subnet_group_name"
 
 }
+
+variable "db_parameter_group_name" {
+
+type = string
+description = "db_parameter_group"
+
+}

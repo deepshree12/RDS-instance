@@ -13,7 +13,7 @@ username = var.username
 password = var.password
 skip_final_snapshot = var.skip_final_snapshot
 db_subnet_group_name = aws_db_subnet_group.rds_subnet_group.name
-
+db_parameter_group_name = aws_db_parameter_group.rds_parameter_group.name
 
 
 }
