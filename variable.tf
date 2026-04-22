@@ -62,4 +62,9 @@ description = "skip final snapshot"
 
 }
 
+variable "backup_retention_period" {
 
+type = number
+description = "add backup retention period"
+
+}

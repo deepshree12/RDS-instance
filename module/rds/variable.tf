@@ -74,3 +74,12 @@ type = string
 description = "db_parameter_group"
 
 }
+
+variable "backup_retention_period" {
+
+  type = number
+  description = "backup retention period"
+
+}
+
+
