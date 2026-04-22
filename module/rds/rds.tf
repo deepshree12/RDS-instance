@@ -12,5 +12,5 @@ username = var.username
 manage_master_user_password = true 
 parameter_group_name = var.db_parameter_group_name
 skip_final_snapshot = var.skip_final_snapshot
-
+backup_retention_period = var.backup_retention_period
 }

@@ -13,6 +13,6 @@ username = var.username
 skip_final_snapshot = var.skip_final_snapshot
 db_subnet_group_name = aws_db_subnet_group.rds_subnet_group.name
 db_parameter_group_name = aws_db_parameter_group.rds_parameter_group.name
-
+backup_retention_period = var.backup_retention_period
 
 }
